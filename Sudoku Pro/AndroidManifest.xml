@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.app2go.sudokupro"
+      android:installLocation="auto"
+      android:versionName="1.0"
+      android:versionCode="1">
+    
+    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="15" />
+    
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <supports-screens android:smallScreens="true"
+                      android:normalScreens="true" 
+                      android:largeScreens="true"
+					  android:xlargeScreens="true"
+                      android:anyDensity="true"/>
+    
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name">
+		
+		<!-- Ad Provider -->
+		<activity
+			android:name="com.google.ads.AdActivity"
+			android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        
+        <activity android:name="com.app2go.sudokupro.gui.FolderListActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.app2go.sudokupro.gui.SudokuListActivity"
+                  android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.app2go.sudokupro.gui.SudokuEditActivity"
+                  android:label="@string/edit_sudoku">
+	        <intent-filter>
+                <action android:name="android.intent.action.INSERT" />
+                <action android:name="android.intent.action.EDIT" />
+                <category android:name="android.intent.category.DEFAULT" />
+	        </intent-filter>
+        </activity>
+        <activity android:name="com.app2go.sudokupro.gui.FileImportActivity"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                    <action android:name="android.intent.action.VIEW"></action>
+                    <category android:name="android.intent.category.DEFAULT"></category>
+                    <category android:name="android.intent.category.BROWSABLE"></category>
+                    <data android:scheme="file" android:host="*"  android:pathPattern=".*\\.sdm" />
+                    <data android:scheme="http" android:host="*"  android:pathPattern=".*\\.sdm" />
+                    <data android:scheme="file" android:host="*"  android:pathPattern=".*\\.opensudoku" />
+                    <data android:scheme="http" android:host="*"  android:pathPattern=".*\\.opensudoku" />
+            </intent-filter> 
+        </activity>
+        <!-- This activity is here to keep backward compatibility, use SudokuImportActivity instead. -->
+        <activity android:name="com.app2go.sudokupro.gui.ImportSudokuActivity"> 
+            <intent-filter>
+                    <action android:name="android.intent.action.VIEW"></action>
+                    <category android:name="android.intent.category.DEFAULT"></category>
+                    <category android:name="android.intent.category.BROWSABLE"></category>
+            </intent-filter> 
+        </activity>
+        <activity android:name="com.app2go.sudokupro.gui.SudokuImportActivity"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.Dialog">
+            <intent-filter>
+                    <action android:name="android.intent.action.VIEW"></action>
+                    <category android:name="android.intent.category.DEFAULT"></category>
+                    <category android:name="android.intent.category.BROWSABLE"></category>
+                    <data android:mimeType="application/x-opensudoku" />
+            </intent-filter> 
+        </activity>
+        <activity android:name="com.app2go.sudokupro.gui.SudokuExportActivity"
+                  android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.app2go.sudokupro.gui.SudokuPlayActivity"
+                  android:label="@string/app_name">
+        </activity>
+        <activity android:name="com.app2go.sudokupro.gui.GameSettingsActivity"
+                  android:label="@string/game_settings">
+        </activity>
+        <activity android:name=".gui.FileListActivity"
+                  android:label="@string/app_name">
+        </activity>
+        
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    
+</manifest> 
