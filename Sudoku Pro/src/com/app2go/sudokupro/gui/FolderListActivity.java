@@ -84,7 +84,8 @@ public class FolderListActivity extends ListActivity {
     private long mRenameFolderID; 
     private long mDeleteFolderID;
     
-    @Override
+    @SuppressWarnings("deprecation")
+	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
@@ -99,7 +100,7 @@ public class FolderListActivity extends ListActivity {
         boolean isInitalized = PreferenceManager.getDefaultSharedPreferences(this).getBoolean("DB_HAS_BEEN_INITIALIZED", false);
         if (!isInitalized) {
         	if (SudokuDatabase.createAndInitDB(this)) {
-        		PreferenceManager.getDefaultSharedPreferences(this).edit().putBoolean("DB_HAS_BEEN_INITIALIZED", true);
+        		PreferenceManager.getDefaultSharedPreferences(this).edit().putBoolean("DB_HAS_BEEN_INITIALIZED", true).commit();
         	}
         	else {
         		finish();

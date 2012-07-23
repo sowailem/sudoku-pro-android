@@ -448,15 +448,25 @@ public class SudokuDatabase {
      * @param sudoku 
      */
     public void updateSudoku(SudokuGame sudoku) {
-        ContentValues values = new ContentValues();
-        values.put(SudokuColumns.DATA, sudoku.getCells().serialize());
-        values.put(SudokuColumns.LAST_PLAYED, sudoku.getLastPlayed());
-        values.put(SudokuColumns.STATE, sudoku.getState());
-        values.put(SudokuColumns.TIME, sudoku.getTime());
-        values.put(SudokuColumns.PUZZLE_NOTE, sudoku.getNote());
-        
     	SQLiteDatabase db = mOpenHelper.getWritableDatabase();
-        db.update(SUDOKU_TABLE_NAME, values, SudokuColumns._ID + "=" + sudoku.getId(), null);
+		try {
+    		db.beginTransaction();
+	        ContentValues values = new ContentValues();
+	        values.put(SudokuColumns.DATA, sudoku.getCells().serialize());
+	        values.put(SudokuColumns.LAST_PLAYED, sudoku.getLastPlayed());
+	        values.put(SudokuColumns.STATE, sudoku.getState());
+	        values.put(SudokuColumns.TIME, sudoku.getTime());
+	        values.put(SudokuColumns.PUZZLE_NOTE, sudoku.getNote());
+	        
+	        db.update(SUDOKU_TABLE_NAME, values, SudokuColumns._ID + "=" + sudoku.getId(), null);
+        	db.setTransactionSuccessful();
+		}
+		catch (Exception ignore) {}
+		finally {
+			try {
+				db.endTransaction();
+			} catch (Exception ignore) {}
+		}
     }
     
 

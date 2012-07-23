@@ -24,8 +24,6 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-import com.app2go.sudokupro.R;
-import com.app2go.sudokupro.game.SudokuGame;
 
 /**
  * This class helps open, create, and upgrade the database file.
@@ -36,11 +34,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 	
 	public static final int DATABASE_VERSION = 8;
 	
-	private Context mContext;
-	
     DatabaseHelper(Context context) {
         super(context, SudokuDatabase.DATABASE_NAME, null, DATABASE_VERSION);
-        this.mContext = context;
     }
 
     @Override
