@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Translation by Guillaume Semichon -->
+
+<resources>
+    <!-- The possible grid styles (used by "Start New Game") -->
+    <string-array name="grid_styles">
+        <item>Standard</item>
+        <item>Serpentart</item>
+    </string-array>
+
+    <!-- The possible extra regions (used by "Start New Game") -->
+    <string-array name="extra_regions">
+        <item>Grille classique</item>
+        <item>X-Sudoku</item>
+        <item>Hyper-Sudoku</item>
+        <item>Pourcent-Doku</item>
+        <item>Sodoku-lor</item>
+    </string-array>
+
+    <!-- The possible difficulties (used by "Start New Game") -->
+    <string-array name="difficulties">
+        <item>Facile</item>
+        <item>Moyen</item>
+        <item>Stimulant</item>
+        <item>Difficile</item>
+        <item>Diabolique</item>
+    </string-array>
+
+    <!-- Values for "Colored Regions" (used by "Settings") -->
+    <string-array name="pref_entries_colored_regions">
+        <item>Jamais</item>
+        <item>Standard, Serpentart sauf zones supp</item>
+        <item>Sauf Serpentart, avec zones supp</item>
+        <item>Toujours</item>
+    </string-array>
+
+    <!-- Values for "Highlight Digits" (used by "Settings") -->
+    <string-array name="pref_entries_highlight_digits">
+        <item>Jamais</item>
+        <item>Chiffres uniques</item>
+        <item>Chiffres uniques et multiples</item>
+    </string-array>
+
+    <!-- Values for "Color Theme" (used by "Settings") -->
+    <string-array name="pref_entries_color_theme">
+        <item>Classique</item>
+        <item>Nuit</item>
+    </string-array>
+
+    <!-- Values for "Input Method" (used by "Settings") -->
+    <string-array name="pref_entries_input_method">
+        <item>Cellule - chiffre</item>
+        <item>Chiffre - cellule</item>
+        <item>Automatique</item>
+    </string-array>
+</resources>

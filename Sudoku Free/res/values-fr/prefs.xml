@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<!-- Translation by Guillaume Semichon -->
+
+<!-- Contains strings for the "Settings" activity -->
+<resources>
+    <!-- Category for "Display" related settings -->
+    <string name="pref_category_display">Affichage</string>
+
+    <!-- Titles and summaries for "Display" related settings -->
+    <string name="pref_title_fullscreen_mode">Plein écran</string>
+    <string name="pref_summary_fullscreen_mode">Cacher la barre de status pendant le jeu. Redémarrage nécessaire.</string>
+    <string name="pref_title_color_theme">Thème</string>
+    <string name="pref_summary_color_theme">Choix du thème de couleurs.</string>
+    <string name="pref_title_colored_regions">Zones colorées</string>
+    <string name="pref_summary_colored_regions">Utiliser des couleurs pour visualiser les différentes zones des grilles.</string>
+
+    <!-- Category for "Behavior" related settings -->
+    <string name="pref_category_behavior">Validation</string>
+
+    <!-- Titles and summaries for "Behavior" related settings -->
+    <string name="pref_title_input_method">Méthode de validation</string>
+    <string name="pref_summary_input_method">Choisir comment l\'on insère les chiffres dans la grille pendant le jeu.</string>
+    <string name="pref_title_check_against_solution">Vérification des erreurs</string>
+    <string name="pref_summary_check_against_solution">Vérifier la grille en fonction de la solution.</string>
+
+    <!-- Category for in-game features -->
+    <string name="pref_category_game_features">Particularités du jeu</string>
+
+    <!-- Titles and summaries for in-game features -->
+    <string name="pref_title_highlight_digits">Surlignage des chiffres</string>
+    <string name="pref_summary_highlight_digits">Mise en valeur du dernier chiffre entré ou de la case sélectionnée.</string>
+    <string name="pref_title_show_timer">Chronomètre</string>
+    <string name="pref_summary_show_timer">Afficher un chronomètre pendant le jeu.</string>
+    <string name="pref_title_enable_eliminate_values">\'Effacer des chiffres\'</string>
+    <string name="pref_summary_enable_eliminate_values">Autoriser l\'option \'Effacer des chiffres\' au cours du jeu.</string>
+ </resources>

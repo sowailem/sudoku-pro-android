@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	
+	<LinearLayout android:id="@+id/background"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:paddingLeft="5dp" android:paddingRight="5dp" android:gravity="center_horizontal"
+		android:orientation="vertical" android:background="@drawable/bg" android:paddingBottom="50dip">
+		
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:paddingBottom="1dp">
+			
+			<TextView android:id="@+id/labelPuzzleName"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:paddingRight="8dp"
+				android:singleLine="true" android:ellipsize="marquee" />
+
+			<TextView android:id="@+id/labelPuzzleDifficulty"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:text="Hard" />
+
+		</LinearLayout>
+
+		<com.app2go.sudokufree.SudokuPuzzleView
+			android:id="@+id/viewPuzzle" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:focusableInTouchMode="true"
+			android:gravity="center" android:layout_weight="1" />
+		<!-- -->
+		<LinearLayout android:layout_width="fill_parent"
+			android:layout_height="wrap_content" android:orientation="horizontal"
+			android:paddingTop="1dp" android:paddingBottom="1dp">
+
+			<TextView android:id="@+id/labelPuzzleSource"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:paddingRight="8dp"
+				android:singleLine="true" android:ellipsize="marquee" android:text="#1/100" />
+
+			<TextView android:id="@+id/labelTimer" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:text="00:00:00" />
+
+		</LinearLayout>
+
+	
+		<TableLayout android:id="@+id/keypad"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+			<TableRow>
+				<ImageButton android:id="@+id/input_undo" android:src="@drawable/undo"
+					style="@style/KeypadButton" android:layout_gravity="center_vertical"
+					android:layout_height="fill_parent" />
+				<com.app2go.sudokufree.KeypadToggleButton
+					android:id="@+id/input_1" android:text="1" />
+				<com.app2go.sudokufree.KeypadToggleButton
+					android:id="@+id/input_2" android:text="2" />
+				<com.app2go.sudokufree.KeypadToggleButton
+					android:id="@+id/input_3" android:text="3" />
+			</TableRow>
+
+			<TableRow>
+				<ImageButton android:id="@+id/input_redo" android:src="@drawable/redo"
+					style="@style/KeypadButton" android:layout_gravity="center_vertical"
+					android:layout_height="fill_parent" />
+				<com.app2go.sudokufree.KeypadToggleButton
+					android:id="@+id/input_4" android:text="4" />
+				<com.app2go.sudokufree.KeypadToggleButton
+					android:id="@+id/input_5" android:text="5" />
+				<com.app2go.sudokufree.KeypadToggleButton
+					android:id="@+id/input_6" android:text="6" />
+			</TableRow>
+
+			<TableRow>
+				<com.app2go.sudokufree.KeypadButton
+					android:id="@+id/input_invert" android:text="@string/button_invert"
+					android:layout_gravity="center_vertical" android:layout_height="fill_parent" />
+				<com.app2go.sudokufree.KeypadToggleButton
+					android:id="@+id/input_7" android:text="7" android:layout_gravity="center_vertical" />
+				<com.app2go.sudokufree.KeypadToggleButton
+					android:id="@+id/input_8" android:text="8" android:layout_gravity="center_vertical" />
+				<com.app2go.sudokufree.KeypadToggleButton
+					android:id="@+id/input_9" android:text="9" android:layout_gravity="center_vertical" />
+				<com.app2go.sudokufree.KeypadButton
+					android:id="@+id/input_clear" android:text="@string/button_clear"
+					android:layout_gravity="center_vertical" android:layout_height="fill_parent" />
+			</TableRow>
+
+		</TableLayout>
+		<TextView android:id="@+id/labelCongrats"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:textColor="#f242" android:gravity="center_horizontal"
+			android:textSize="16dp" android:padding="5dp" />
+
+		<Button android:id="@+id/buttonDismissCongrats"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:paddingLeft="12dp" android:paddingRight="12dp"
+			android:text="@string/button_dismiss_congrats" />
+
+		<LinearLayout android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:gravity="center_vertical"
+			android:baselineAligned="false">
+
+			<ImageButton android:id="@+id/buttonBack"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:src="@drawable/back_button" />
+
+			<Button android:id="@+id/buttonStart" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:paddingLeft="25dp"
+				android:paddingRight="25dp" android:layout_weight="1" android:text="Start" />
+
+			<ImageButton android:id="@+id/buttonNext"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:src="@drawable/next_button" />
+
+
+		</LinearLayout>
+		
+		
+	</LinearLayout>
+
+    <include android:id="@+id/ad" layout="@layout/ad"/>
+		
+</merge>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Sudoku Free - a sudoku puzzle game for Android.
+  Copyright (C) 2009, 2010  Markus Wiederkehr
+
+  This file is part of Sudoku Free.
+
+  Sudoku Free is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  Sudoku Free is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with Sudoku Free.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<resources>
+    <!-- Corresponds with enum AreaColorPolicy -->
+    <string-array name="pref_entryvalues_colored_regions">
+        <item>NEVER</item>
+        <item>STANDARD_SQUIGGLY</item>
+        <item>STANDARD_X_HYPER_SQUIGGLY</item>
+        <item>ALWAYS</item>
+    </string-array>
+
+    <!-- Corresponds with enum HighlightDigitsPolicy -->
+    <string-array name="pref_entryvalues_highlight_digits">
+        <item>NEVER</item>
+        <item>ONLY_SINGLE_VALUES</item>
+        <item>ALL_VALUES</item>
+    </string-array>
+
+    <!-- Corresponds with enum ColorThemePolicy -->
+    <string-array name="pref_entryvalues_color_theme">
+        <item>CLASSIC</item>
+        <item>DARK</item>
+    </string-array>
+
+    <!-- Corresponds with enum InputMethodPolicy -->
+    <string-array name="pref_entryvalues_input_method">
+        <item>CELL_THEN_VALUES</item>
+        <item>VALUES_THEN_CELL</item>
+        <item>AUTOMATIC</item>
+    </string-array>
+</resources>

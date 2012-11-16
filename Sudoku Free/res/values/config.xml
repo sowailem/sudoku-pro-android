@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="admob_adUnitId">a14f22d07344fa3</string>
+    <string name="admob_mediationId_Banner">a14f22d07344fa3</string>
+    <string name="admob_mediationId_FullBanner">a14f22d07344fa3</string>
+    <string name="admob_mediationId_Leaderboard">a14f22d07344fa3</string>
+</resources>

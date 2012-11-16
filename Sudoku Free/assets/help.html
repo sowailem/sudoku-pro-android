@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+<head>
+<title>Help On Sudoku Free</title>
+<link rel="stylesheet" type="text/css"
+	href="file:///android_asset/style.css">
+</head>
+<body>
+
+<h1>Table of Contents</h1>
+
+<ul>
+	<li><a href="#objective">Objective</a></li>
+	<li><a href="#variations">Game Variations</a></li>
+	<ul>
+		<li><a href="#grids">Grid Styles</a></li>
+		<li><a href="#extras">Extra Regions</a></li>
+	</ul>
+	<li><a href="#difficulties">Levels of Difficulty</a></li>
+	<li><a href="#inputmethods">Input Methods</a></li>
+	<ul>
+		<li><a href="#im_ctv">Cell Then Values</a></li>
+		<li><a href="#im_vtc">Values Then Cell</a></li>
+		<li><a href="#im_auto">Automatic</a></li>
+	</ul>
+	<li><a href="#links">External Links</a></li>
+</ul>
+
+<h1 id="objective">Objective</h1>
+
+<p>The objective of the game is to fill the entire game grid so that
+the digits from 1 to 9 appear exactly once in each <i>region</i>. For a
+standard sudoku a <i>region</i> is either a row, a column or one of the
+nine square 3x3 blocks.</p>
+
+<h1 id="variations">Game Variations</h1>
+
+<p>Sudoku Free offers additional sudoku variations besides the classical
+one. In the <i>New Game</i> menu you can choose from two grid styles and
+five kinds of extra regions.</p>
+
+<h2 id="grids">Grid Styles</h2>
+
+<p>The available grid styles are:</p>
+<dl>
+	<dt>Standard</dt>
+	<dd>The grid is made up of square 3x3 blocks.</dd>
+	<dt>Squiggly (a.k.a. jigsaw)</dt>
+	<dd>Instead of 9 square blocks the game grid consists of 9
+	non-square regions. The regions are outlined with a thick line and the
+	digits 1 to 9 have to appear exactly once in each region.</dd>
+</dl>
+
+<h2 id="extras">Extra Regions</h2>
+
+<p>Extra regions impose additional constraints on the puzzle.
+Besides the classic version there are four kinds of extra regions:</p>
+<dl>
+	<dt>None</dt>
+	<dd>You only have to deal with nine rows, nine columns and nine
+	blocks in either square or squiggly format.</dd>
+	<dt>X-Sudoku</dt>
+	<dd>The digits 1 to 9 also have to appear exactly once in the two
+	diagonals of the puzzle. To indicate this the diagonals of the puzzle
+	are highlighted by a different color.</dd>
+	<dt>Hyper-Sudoku</dt>
+	<dd>This sudoku has four additional regions highlighted in a
+	different background color. In addition to rows, columns and blocks the
+	digits 1 to 9 have to appear exactly once in each of these extra
+	regions.</dd>
+	<dt>Percent-Sudoku</dt>
+	<dd>The sudoku has three additional regions that resemble a
+	percent sign.</dd>
+	<dt>Color-Sudoku</dt>
+	<dd>This sudoku has nine additional regions. Each one of these
+	regions is highlighted by a distinct color so there are nine different
+	background colors. The digits 1 to 9 have to appear exactly once in all
+	cells that have the same background color.</dd>
+</dl>
+
+<h1 id="difficulties">Levels of Difficulty</h1>
+
+<p>Sudoku Free offers five levels of difficulty per game type. The
+difficulties range from <i>Easy</i> to <i>Fiendish</i>. Squiggly sudokus
+or sudokus with extra regions are generally more difficult than standard
+sudokus.</p>
+
+<p>The levels of difficulty <i>Hard</i> and <i>Fiendish</i> should
+contain harder puzzles than what can be found in newspapers.</p>
+
+<p>With ten different game types, five levels of difficulty and 100
+puzzles per type and difficulty Sudoku Free offers a total of 5000 puzzles.</p>
+
+<h1 id="inputmethods">Input Methods</h1>
+
+<p>Sudoku Free offers three different input methods for entering digits
+into the cells of a puzzle while playing. Go to Settings to choose
+between the available input methods.</p>
+
+<h2 id="im_ctv">Cell Then Values</h2>
+
+<p>With this input method you first select a cell by tapping on it
+with your finger and then you use the numeric pad at the bottom of the
+screen to enter one or more possible values for that cell. The selected
+cell will be highlighted with a background color.</p>
+
+<p>Press the button <tt>C</tt> to clear the values of the selected
+cell.</p>
+
+<p>The button <tt>Inv</tt> (Invert) is used to reverse the values of
+the current cell. This makes it possible to easily specify that certain
+values are <i>not</i> possible in a certain cell. For example if you
+enter <tt>3</tt>, <tt>7</tt>, <tt>Inv</tt> the result will be 1, 2, 4,
+5, 6, 8 and 9 (all digits except 3 and 7).</p>
+
+<p>If the device has a trackball it can be used to move the
+selection to one of the neighbor fields.</p>
+
+<h2 id="im_vtc">Values Then Cell</h2>
+
+<p>This input method works in reverse. First select one or more
+values from the numeric pad at the bottom of the screen. Only then can
+you tap on a cell to assign these values.</p>
+
+<p>This input method can save a lot of time because it is possible
+to assign the same value or values to multiple cells by tapping on
+different cells one after the other.</p>
+
+<p>But what happens when you tap on a cell that is not empty? The
+result depends on whether the cell already contains one of the selected
+values or not. If the cell does not already contain one of the selected
+values the values are simply added (same behavior as if the cell is
+empty). If, on the other hand, the cell already contains one of the
+selected values then all of the selected values will be reset.</p>
+
+<p>Example 1: if cell value is <tt>3</tt>, numeric pad contains <tt>5</tt>
+and <tt>7</tt>, this results in 3, 5 and 7.</p>
+
+<p>Example 2: if cell values are <tt>3</tt>, <tt>5</tt> and <tt>7</tt>,
+numeric pad contains <tt>3</tt> and <tt>5</tt>, this results in 7.</p>
+
+<p>Example 3: if cell values are <tt>3</tt> and <tt>5</tt>, numeric
+pad contains <tt>5</tt> and <tt>8</tt>, this results in 3. I.e. 5 is
+cleared, but 8 is <i>not</i> set.</p>
+
+<p>The button <tt>C</tt> is used to clear all values on the numeric
+pad. The button <tt>Inv</tt> is used to reverse the values on the
+numeric pad.</p>
+
+<p>Example 4: if cell values are <tt>3</tt>, <tt>5</tt> and <tt>7</tt>,
+suppose you think the correct value ought to be 5. An easy way to remove
+all values except 5 is to press <tt>5</tt> followed by <tt>Inv</tt> and
+then to tap on the cell.</p>
+
+<h2 id="im_auto">Automatic</h2>
+
+<p>Use this input method if you want to easily switch back and forth
+between <i>Cell Then Values</i> and <i>Values Then Cell</i>.</p>
+
+<p>This means that initially both input methods are possible. If you
+tap on a cell first then <i>Cell Then Values</i> will be used
+automatically. If you tap on a digit of the numeric pad first then <i>Values
+Then Cell</i> will be used instead.</p>
+
+<p>If you want to get back to the neutral state from <i>Cell
+Then Values</i> you have to tap on the selected cell a second time.</p>
+
+<p>To get back from <i>Values Then Cell</i> you have to clear all
+values on the numeric pad. The simplest way to do this is by pressing
+the button <tt>C</tt>.</p>
+
+</body>
+</html>

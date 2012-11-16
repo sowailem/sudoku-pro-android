@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.app2go.sudokufree"
+	android:versionCode="3"
+	android:versionName="1.1"
+	android:installLocation="auto">
+    
+	<uses-sdk android:minSdkVersion="3" android:targetSdkVersion="17"/>
+
+	<uses-permission android:name="android.permission.VIBRATE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	
+	<permission-group android:name="com.app2go.sudokufree.permission-group.SUDOKU"
+		android:label="@string/permgroup_label_sudoku" android:description="@string/permgroup_description_sudoku"
+		android:icon="@drawable/icon" />
+
+	<permission android:name="com.app2go.sudokufree.permission.IMPORT"
+		android:label="@string/perm_label_import" android:description="@string/perm_description_import"
+		android:permissionGroup="com.app2go.sudokufree.permission-group.SUDOKU"
+		android:protectionLevel="normal" />
+
+    <supports-screens android:smallScreens="true"
+                      android:normalScreens="true" 
+                      android:largeScreens="true"
+					  android:xlargeScreens="true"
+                      android:anyDensity="true"/>
+    
+	<application android:name=".Application" android:icon="@drawable/icon"
+		android:label="@string/app_name" android:theme="@style/Theme.Light" >
+		<provider android:name=".SudokuContentProvider"
+			android:authorities="com.app2go.sudokufree.puzzlesprovider"
+			android:writePermission="com.app2go.sudokufree.permission.IMPORT" />
+
+		<activity android:name="com.app2go.sudokufree.Main" android:label="@string/app_name"
+			android:screenOrientation="portrait" android:theme="@style/Theme.Light" >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="com.app2go.sudokufree.MainActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait" android:theme="@style/Theme.Light" >
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="com.app2go.sudokufree.OpenImportedPuzzleActivity"
+			android:label="@string/app_name" android:screenOrientation="portrait" android:theme="@style/Theme.Light" >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name="com.app2go.sudokufree.ResumeGameActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait" android:theme="@style/Theme.Light" />
+
+		<activity android:name="com.app2go.sudokufree.NewGameActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait" android:theme="@style/Theme.Light" />
+
+		<activity android:name="com.app2go.sudokufree.FolderListActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait" android:theme="@style/Theme.Light" />
+
+		<activity android:name="com.app2go.sudokufree.SettingsActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait" android:theme="@style/Theme.Light" />
+
+		<activity android:name="com.app2go.sudokufree.HelpActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait" android:theme="@style/Theme.Light" />
+
+		<activity android:name="com.app2go.sudokufree.AboutActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait" android:theme="@style/Theme.Light" />
+
+		<activity android:name="com.app2go.sudokufree.SudokuActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait" android:theme="@style/Theme.Light" />
+
+		<activity android:name="com.app2go.sudokufree.DisplayErrorActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait" android:theme="@style/Theme.Light" />
+
+		<!-- Ad Provider -->
+		<activity
+			android:name="com.google.ads.AdActivity"
+			android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+		
+	</application>
+
+</manifest>

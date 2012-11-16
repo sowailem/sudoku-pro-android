@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Sudoku Free - a sudoku puzzle game for Android.
+  Copyright (C) 2009, 2010  Markus Wiederkehr
+
+  This file is part of Sudoku Free.
+
+  Sudoku Free is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  Sudoku Free is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with Sudoku Free.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<resources>
+    <!-- The possible grid styles (used by "Start New Game") -->
+    <string-array name="grid_styles">
+        <item>Standard</item>
+        <item>Squiggly</item>
+    </string-array>
+
+    <!-- The possible extra regions (used by "Start New Game") -->
+    <string-array name="extra_regions">
+        <item>No extra regions</item>
+        <item>X-Sudoku</item>
+        <item>Hyper-Sudoku</item>
+        <item>Percent-Sudoku</item>
+        <item>Color-Sudoku</item>
+    </string-array>
+
+    <!-- The possible difficulties (used by "Start New Game") -->
+    <string-array name="difficulties">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Challenging</item>
+        <item>Hard</item>
+        <item>Fiendish</item>
+    </string-array>
+
+    <!-- Values for "Colored Regions" (used by "Settings") -->
+    <string-array name="pref_entries_colored_regions">
+        <item>Never</item>
+        <item>For Standard and Squiggly w/o extra</item>
+        <item>For all except Squiggly with extra regions</item>
+        <item>Always</item>
+    </string-array>
+
+    <!-- Values for "Highlight Digits" (used by "Settings") -->
+    <string-array name="pref_entries_highlight_digits">
+        <item>Never</item>
+        <item>Only single values</item>
+        <item>Both single and multiple values</item>
+    </string-array>
+
+    <!-- Values for "Color Theme" (used by "Settings") -->
+    <string-array name="pref_entries_color_theme">
+        <item>Classic</item>
+        <item>Dark</item>
+    </string-array>
+
+    <!-- Values for "Input Method" (used by "Settings") -->
+    <string-array name="pref_entries_input_method">
+        <item>Cell Then Values</item>
+        <item>Values Then Cell</item>
+        <item>Automatic</item>
+    </string-array>
+</resources>

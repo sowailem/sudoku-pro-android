@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.ads.AdView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:admob="http://schemas.android.com/apk/lib/com.google.ads"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_gravity="bottom|center_horizontal"
+	admob:adUnitId="@string/admob_mediationId_FullBanner"
+	admob:adSize="IAB_BANNER"/>

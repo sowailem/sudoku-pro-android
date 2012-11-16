@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <!-- The possible grid styles (used by "Start New Game") -->
+    <string-array name="grid_styles">
+        <item>标准</item>
+        <item>弯曲</item>
+    </string-array>
+
+    <!-- The possible extra regions (used by "Start New Game") -->
+    <string-array name="extra_regions">
+        <item>无附加区域</item>
+        <item>X-数独</item>
+        <item>Hyper-数独</item>
+        <item>百分-数独</item>
+        <item>彩色-数独</item>
+    </string-array>
+
+    <!-- The possible difficulties (used by "Start New Game") -->
+    <string-array name="difficulties">
+        <item>简单</item>
+        <item>一般</item>
+        <item>挑战</item>
+        <item>困难</item>
+        <item>变态</item>
+    </string-array>
+
+    <!-- Values for "Colored Regions" (used by "Settings") -->
+    <string-array name="pref_entries_colored_regions">
+        <item>全部</item>
+        <item>标准和弯曲 w/o 型区域</item>
+        <item>除弯曲外的所有区域</item>
+        <item>默认</item>
+    </string-array>
+
+    <!-- Values for "Highlight Digits" (used by "Settings") -->
+    <string-array name="pref_entries_highlight_digits">
+        <item>全部</item>
+        <item>单个数字</item>
+        <item>单个和多个数字</item>
+    </string-array>
+
+    <!-- Values for "Color Theme" (used by "Settings") -->
+    <string-array name="pref_entries_color_theme">
+        <item>经典</item>
+        <item>黑色</item>
+    </string-array>
+
+    <!-- Values for "Input Method" (used by "Settings") -->
+    <string-array name="pref_entries_input_method">
+        <item>方格选中值</item>
+        <item>点数值选中方格</item>
+        <item>自动</item>
+    </string-array>
+</resources>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <!-- Application name -->
+    <string name="app_name">趣味数独</string>
+
+    <!-- When was a game last played (used by "Resume Game") -->
+    <string name="age_0_minutes">0 分钟前</string>
+    <string name="age_1_day">昨天</string>
+    <string name="age_1_hour">1 小时前</string>
+    <string name="age_1_minute">1 分钟前</string>
+    <string name="age_1_week">1周前</string>
+    <string name="age_2_days">2天前</string>
+    <string name="age_n_days"> %d 天前</string>
+    <string name="age_n_hours"> %d 小时前</string>
+    <string name="age_n_minutes"> %d 分钟前</string>
+    <string name="age_n_weeks"> %d 周前</string>
+
+    <!-- Okay and cancel buttons for alert dialogs (reset puzzle, rename folder, ..) -->
+    <string name="alert_dialog_ok">确定</string>
+    <string name="alert_dialog_cancel">取消</string>
+
+    <!-- Navigation buttons (mostly used by main menu) -->
+    <string name="button_nav_resume_game">继续游戏</string>
+    <string name="button_nav_select_new_game">开始游戏</string>
+    <string name="button_nav_select_folders">文件夹</string>
+    <string name="button_nav_settings">设置</string>
+    <string name="button_nav_help">帮助</string>
+    <string name="button_nav_about">关于</string>
+    <string name="button_nav_start_game">继续</string>
+    <string name="button_nav_back">返回</string>
+    <string name="button_nav_cancel">退出</string>
+	
+	<string name="button_more">更多应用</string>
+
+    <!-- Button to dismiss congratulations/statistics at the end of a game -->
+    <string name="button_dismiss_congrats">继续</string>
+
+    <!-- Different values for the button that starts/resumes/resets a game (when browsing through the list of puzzles) -->
+    <string name="button_reset_game">重置游戏</string>
+    <string name="button_resume_game">继续游戏</string>
+    <string name="button_start_game">开始游戏</string>
+
+    <!-- Additional keypad buttons -->
+    <string name="button_clear">C</string>
+    <string name="button_invert">Inv</string>
+
+    <!-- Menu entries for the "Imported Folders" activity -->
+     <string name="menu_create_folder">创建文件夹</string>
+
+    <!-- Context menu entries for the "Imported Folders" activity -->
+    <string name="context_menu_delete_folder">删除文件夹</string>
+    <string name="context_menu_rename_folder">重命名文件夹</string>
+
+    <!-- Captions and messages for confirmation dialogs -->
+    <string name="dialog_create_folder">创建文件夹</string>
+    <string name="message_create_folder">文件夹名称:</string>
+    <string name="dialog_delete_folder">删除文件夹</string>
+    <string name="message_delete_folder">文件平 \'%s\' 不是空的. 是否删除?</string>
+    <string name="dialog_rename_folder">重命名文件夹</string>
+    <string name="message_rename_folder">给 \'%s\'取个名称:</string>
+    <string name="message_invalid_folder_name">很抱歉, 文件夹名称不能包括斜杠或空格!</string>
+    <string name="message_folder_exists">创建文件夹失败. 文件夹 \'%s\' 已存在!</string>
+    <string name="dialog_reset_puzzle">复位游戏?</string>
+    <string name="message_reset_puzzle">是否重新开始游戏?</string>
+    <string name="dialog_reset_all_puzzles">复位所有迷团?</string>
+    <string name="message_reset_all_puzzles_in_variation">是否重置当前游戏下的所有迷团?</string>
+    <string name="message_reset_all_puzzles_in_folder">是否重置本文件夹中的所有迷团?</string>
+
+    <!-- Captions for the error page -->
+    <string name="error_title_io_error">I/O 错误</string>
+
+    <!-- Messages for the error page -->
+    <string name="error_message_finding_available">寻找合适游戏迷团时出错了!</string>
+    <string name="error_message_loading_puzzle">加载迷团时出错了!</string>
+    <string name="error_message_stack_trace">堆栈信息:</string>
+
+    <!-- Names of the help and about pages for this language (under folder "assets") -->
+    <string name="html_page_about">about.html</string>
+    <string name="html_page_help">help.html</string>
+
+    <!-- Info/warning messages for "Check Puzzle" or when all cells are filled in -->
+    <string name="message_computing_solution">正在生成正确结果. 请稍候...</string>
+    <string name="info_puzzle_ok_1">正常. 走一步.</string>
+    <string name="info_puzzle_ok_n">正常. 走%d 步.</string>
+    <string name="warn_invalid_puzzle">不能得到正确结果!</string>
+    <string name="warn_puzzle_errors">出错了!</string>
+    <string name="info_invalid_solution">很抱歉, 解答错误!\n\n单击菜单中的 \'检查\'功能查看错误.</string>
+
+    <!-- Options menu while playing -->
+    <string name="menu_check_puzzle">检查</string>
+    <string name="menu_pause">暂停</string>
+    <string name="menu_reset_puzzle">复位</string>
+    <string name="menu_reset_all_puzzles">重置所有迷团</string>
+    <string name="menu_resume">继续</string>
+    <string name="menu_eliminate_values">Eliminate Values</string>
+    <string name="menu_settings">设置</string>
+
+    <!-- Messages for congratulations/statistics at end of game -->
+    <string name="message_congrats">&lt;b&gt;恭喜你, 解答正确!&lt;/b&gt;</string>
+    <string name="message_statistics_title_assets"  formatted="false">统计 &lt;i&gt;%s (%s)&lt;/i&gt;:</string>
+    <string name="message_statistics_title_db">文件夹统计 &lt;i&gt;%s&lt;/i&gt;:</string>
+    <string name="message_statistics_details"  formatted="false">解答: %d&lt;br/&gt;平均时间: %s&lt;br/&gt;最快时间: %s</string>
+
+    <!-- Folder cannot be opened because it's empty -->
+    <string name="message_empty_folder">文件夹 \'%s\' 是空的.</string>
+
+    <!-- Puzzle names (displayed top-left when playing) -->
+    <string name="name_sudoku_squiggly">弯曲数独</string>
+    <string name="name_sudoku_squiggly_hyper">弯曲 Hyper-数独</string>
+    <string name="name_sudoku_squiggly_x">弯曲 X-数独</string>
+    <string name="name_sudoku_squiggly_percent">弯曲 百分-数独</string>
+    <string name="name_sudoku_squiggly_color">弯曲  彩色-数独</string>
+    <string name="name_sudoku_standard">标准数独</string>
+    <string name="name_sudoku_standard_hyper">Hyper-数独</string>
+    <string name="name_sudoku_standard_x">X-数独</string>
+    <string name="name_sudoku_standard_percent">百分-数独</string>
+    <string name="name_sudoku_standard_color">彩色-数独</string>
+
+    <!-- Captions for various activities -->
+    <string name="page_title_welcome">Sudoku Free</string>
+    <string name="page_title_resume_game">Resume Game</string>
+    <string name="page_title_new_game">开始新游戏</string>
+    <string name="page_title_folder_list">导入文件夹</string>
+    <string name="page_title_help">数独帮助</string>
+    <string name="page_title_about">关于趣味数独</string>
+	<string name="about">\n\n趣味数独 v1.0\n\n\n</string>
+    <!-- Game type and difficulty selection (used by "Start New Game") -->
+    <string name="spinner_grid">方格样式:</string>
+    <string name="prompt_spinner_grid">选择一个方格样式</string>
+    <string name="spinner_extra_regions">附加区域:</string>
+    <string name="prompt_spinner_extra_regions">选择附加区域样式</string>
+    <string name="spinner_difficulty">级别:</string>
+    <string name="prompt_spinner_difficulty">选择一个级别</string>
+    <string name="mini_stats_0">(还没解答成功的.)</string>
+    <!-- next line uses 'NO-BREAK SPACE' (U+00A0) to avoid undesired line breaks -->
+    <string name="mini_stats_n"  formatted="false">(迷团\u00A0解答:\u00A0%d, 平均\u00A0时间:\u00A0%s, 最快\u00A0时间:\u00A0%s)</string>
+
+    <!-- Declares a permission group and a permission that allows external applications to import puzzles into Sudoku -->
+    <string name="permgroup_label_sudoku">趣味数独</string>
+    <string name="permgroup_description_sudoku">授权访问数独.</string>
+    <string name="perm_label_import">导入到数独</string>
+    <string name="perm_description_import">允许创建文件夹，导入数独库.</string>
+ </resources>

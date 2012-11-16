@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    <!-- The possible grid styles (used by "Start New Game") -->
+    <string-array name="grid_styles">
+        <item>Standard</item>
+        <item>Squiggly</item>
+    </string-array>
+
+    <!-- The possible extra regions (used by "Start New Game") -->
+    <string-array name="extra_regions">
+        <item>Keine</item>
+        <item>X-Sudoku</item>
+        <item>Hyper-Sudoku</item>
+        <item>Prozent-Sudoku</item>
+        <item>Farb-Sudoku</item>
+    </string-array>
+
+    <!-- The possible difficulties (used by "Start New Game") -->
+    <string-array name="difficulties">
+        <item>Einfach</item>
+        <item>Mittel</item>
+        <item>Anspruchsvoll</item>
+        <item>Schwierig</item>
+        <item>Teuflisch</item>
+    </string-array>
+
+    <!-- Values for "Colored Regions" (used by "Settings") -->
+    <string-array name="pref_entries_colored_regions">
+        <item>Niemals</item>
+        <item>Für Standard und Squiggly ohne Extra</item>
+        <item>Für alle außer Squiggly mit Extrabereichen</item>
+        <item>Immer</item>
+    </string-array>
+
+    <!-- Values for "Highlight Digits" (used by "Settings") -->
+    <string-array name="pref_entries_highlight_digits">
+        <item>Niemals</item>
+        <item>Nur einfache Werte</item>
+        <item>Sowohl einfache als auch mehrfache Werte</item>
+    </string-array>
+
+    <!-- Values for "Color Theme" (used by "Settings") -->
+    <string-array name="pref_entries_color_theme">
+        <item>Klassisch</item>
+        <item>Dunkel</item>
+    </string-array>
+
+    <!-- Values for "Input Method" (used by "Settings") -->
+    <string-array name="pref_entries_input_method">
+        <item>Feld dann Werte</item>
+        <item>Werte dann Feld</item>
+        <item>Automatisch</item>
+    </string-array>
+</resources>

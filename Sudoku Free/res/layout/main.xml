@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res/com.app2go.sudokufree"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@drawable/bg">
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <TextView
+        style="@style/NavigationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/page_title_welcome"/>
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <Button
+            style="@style/NavigationButton"
+            android:id="@+id/resumeGameButton"
+            android:layout_width="fill_parent"           
+            android:layout_height="40dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/button_nav_resume_game"/>
+        <Button
+            style="@style/NavigationButton"
+            android:id="@+id/selectNewGameButton"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="14dip"
+            android:text="@string/button_nav_select_new_game"/>
+        <Button
+            style="@style/NavigationButton"
+            android:id="@+id/selectFoldersButton"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="14dip"
+            android:text="@string/button_nav_select_folders"/>
+        <Button
+            style="@style/NavigationButton"
+            android:id="@+id/settingsButton"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="14dip"
+            android:text="@string/button_nav_settings"/>
+        <Button
+            style="@style/NavigationButton"
+            android:id="@+id/helpButton"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="14dip"
+            android:text="@string/button_nav_help"/>
+        <Button
+            style="@style/NavigationButton"
+            android:id="@+id/aboutButton"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="14dip"
+            android:text="@string/button_nav_about" android:visibility="visible"/>
+    </LinearLayout>
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"/>
+
+    <include android:id="@+id/ad" layout="@layout/ad"/>
+    	
+</LinearLayout>
