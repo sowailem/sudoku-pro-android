@@ -6,4 +6,4 @@
 	android:layout_height="wrap_content"
 	android:layout_gravity="bottom|center_horizontal"
 	admob:adUnitId="@string/admob_mediationId_FullBanner"
-	admob:adSize="IAB_BANNER"/>
+	admob:adSize="IAB_BANNER"/> 
